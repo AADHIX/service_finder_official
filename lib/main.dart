@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Color(0x544B4848), // Light grey to match edge images color
+      backgroundColor: Color(0xFFA9A9A9), // Light grey to match edge images color
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -52,13 +52,13 @@ class HeaderSection extends StatelessWidget {
         const Text(
           'Find professional\nservices in your area',
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.amber),
+          style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.black),
         ),
         const SizedBox(height: 10),
         const Text(
           'Autospace is one of the most finest group of\ncollaborative services you wish for',
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 18, color: Colors.black54),
+          style: TextStyle(fontSize: 24, color: Colors.amber),
         ),
         const SizedBox(height: 20),
         Row(
@@ -85,8 +85,8 @@ class EdgeImagesSection extends StatelessWidget {
       children: [
         // Left Image Container
         Container(
-          height: 300,
-          width: 320,
+          height: 200,
+          width: 250,
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/left.png'),
@@ -96,8 +96,8 @@ class EdgeImagesSection extends StatelessWidget {
         ),
         // Right Image Container
         Container(
-          height: 300,
-          width: 320,
+          height: 390,
+          width: 360,
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/right.png'),
